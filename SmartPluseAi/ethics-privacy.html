@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethics & Privacy | SmartPulse AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Assistant -->
+    <div class="floating-assistant">
+        <div class="assistant-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="assistant-message">
+            <p>Ethics and privacy are at the core of everything we do at SmartPulse AI.</p>
+            <button class="close-assistant">&times;</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <div class="pulse"></div>
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <span>SmartPulse<span class="logo-accent">AI</span></span>
+                </a>
+                
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="how-it-works.html" class="nav-link">How It Works</a>
+                    <a href="features.html" class="nav-link">Features</a>
+                    <a href="live-demo.html" class="nav-link">Live Demo</a>
+                    <a href="ethics-privacy.html" class="nav-link active">Ethics & Privacy</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Ethics & Privacy</h1>
+                <p class="page-subtitle">Our commitment to responsible AI development and user privacy is fundamental to our mission.</p>
+            </div>
+        </section>
+
+        <!-- Principles Section -->
+        <section class="principles-section">
+            <div class="container">
+                <h2 class="section-title">Our Ethical <span class="gradient-text">Principles</span></h2>
+                <p class="section-subtitle">We've built SmartPulse AI on a foundation of ethical guidelines that prioritize user wellbeing and autonomy.</p>
+                
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Privacy First</h3>
+                        <p>All data processing happens locally on your device. We never sell, share, or monetize your personal data.</p>
+                        <ul class="principle-details">
+                            <li>On-device processing only</li>
+                            <li>No data transmission to external servers</li>
+                            <li>End-to-end encryption for stored data</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Transparency</h3>
+                        <p>We clearly explain how our AI works, what data we collect, and how we use it to make predictions.</p>
+                        <ul class="principle-details">
+                            <li>Clear explanations of AI decisions</li>
+                            <li>Accessible privacy policy</li>
+                            <li>Open documentation of algorithms</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                        <h3>User Autonomy</h3>
+                        <p>SmartPulse AI provides suggestions, not commands. You always maintain full control over your decisions.</p>
+                        <ul class="principle-details">
+                            <li>Opt-in for all features</li>
+                            <li>Easy to disable interventions</li>
+                            <li>User controls all data collection</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Beneficence</h3>
+                        <p>Our AI is designed to promote user wellbeing, not to maximize engagement or time spent with our product.</p>
+                        <ul class="principle-details">
+                            <li>Wellbeing-focused design</li>
+                            <li>No dark patterns</li>
+                            <li>Evidence-based interventions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Architecture -->
+        <section class="privacy-architecture">
+            <div class="container">
+                <h2 class="section-title">Privacy-First <span class="gradient-text">Architecture</span></h2>
+                
+                <div class="architecture-diagram">
+                    <div class="architecture-step">
+                        <div class="step-visual">
+                            <div class="device-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Data Collection</h3>
+                            <p>User activity data is collected locally on the device with explicit user permission. Only anonymized, aggregated behavioral patterns are processed.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="architecture-arrow">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+                    
+                    <div class="architecture-step">
+                        <div class="step-visual">
+                            <div class="device-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Local Processing</h3>
+                            <p>All AI processing happens on your device. No personal data is sent to external servers. The model learns and improves without compromising privacy.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="architecture-arrow">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+                    
+                    <div class="architecture-step">
+                        <div class="step-visual">
+                            <div class="device-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Personalized Insights</h3>
+                            <p>AI generates personalized behavior insights and suggestions that remain on your device. You choose what to do with these insights.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="privacy-highlight">
+                    <div class="highlight-content">
+                        <h3><i class="fas fa-shield-alt"></i> Zero Data Transmission</h3>
+                        <p>Unlike many AI systems that send your data to cloud servers for processing, SmartPulse AI keeps everything on your device. This means:</p>
+                        <ul>
+                            <li>No risk of data breaches from external servers</li>
+                            <li>Complete control over your personal information</li>
+                            <li>Functionality even without internet connection</li>
+                            <li>No third-party access to your behavioral data</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-visual">
+                        <div class="privacy-shield-large">
+                            <i class="fas fa-lock"></i>
+                            <div class="shield-rings">
+                                <div class="ring ring-1"></div>
+                                <div class="ring ring-2"></div>
+                                <div class="ring ring-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transparency Panel -->
+        <section class="transparency-panel">
+            <div class="container">
+                <h2 class="section-title">Transparency <span class="gradient-text">Panel</span></h2>
+                <p class="section-subtitle">We believe in being open about how our AI systems work and make decisions.</p>
+                
+                <div class="transparency-content">
+                    <div class="transparency-item">
+                        <div class="transparency-header">
+                            <h3><i class="fas fa-code"></i> Algorithmic Transparency</h3>
+                            <button class="toggle-details">Show Details</button>
+                        </div>
+                        <div class="transparency-details">
+                            <p>Our machine learning models are based on interpretable architectures that allow us to explain why certain predictions are made. We avoid "black box" models in favor of transparent algorithms that can be audited and understood.</p>
+                            <ul>
+                                <li>Decision trees for pattern recognition</li>
+                                <li>Rule-based systems for intervention timing</li>
+                                <li>Regular algorithmic audits by third parties</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="transparency-item">
+                        <div class="transparency-header">
+                            <h3><i class="fas fa-database"></i> Data Usage Disclosure</h3>
+                            <button class="toggle-details">Show Details</button>
+                        </div>
+                        <div class="transparency-details">
+                            <p>We clearly document what data we collect, how we use it, and how long we retain it. Users can access, export, or delete their data at any time through the app settings.</p>
+                            <ul>
+                                <li>Activity timestamps (not content)</li>
+                                <li>App usage patterns (not specific actions)</li>
+                                <li>Behavioral sequences (not personal identifiers)</li>
+                                <li>All data deleted upon app uninstallation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="transparency-item">
+                        <div class="transparency-header">
+                            <h3><i class="fas fa-user-cog"></i> User Control Settings</h3>
+                            <button class="toggle-details">Show Details</button>
+                        </div>
+                        <div class="transparency-details">
+                            <p>Every user has complete control over their SmartPulse AI experience. You can customize what data is collected, what types of interventions you receive, and when the AI is active.</p>
+                            <ul>
+                                <li>Granular permission controls</li>
+                                <li>Scheduled "AI-free" periods</li>
+                                <li>Custom intervention sensitivity</li>
+                                <li>One-click data export and deletion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Experience Privacy-First AI</h2>
+                    <p>Try our live demo to see how SmartPulse AI works without compromising your privacy.</p>
+                    <a href="live-demo.html" class="btn btn-primary">Try Live Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-section">
+                    <a href="index.html" class="logo footer-logo">
+                        <div class="logo-icon small">
+                            <div class="pulse"></div>
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <span>SmartPulse<span class="logo-accent">AI</span></span>
+                    </a>
+                    <p class="footer-description">An intelligent system that predicts and improves user behavior for better digital wellbeing.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="live-demo.html">Live Demo</a></li>
+                        <li><a href="ethics-privacy.html">Ethics & Privacy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Project</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">GDPR Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2023 SmartPulse AI. All rights reserved. Designed for research and educational purposes.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
